@@ -10,6 +10,8 @@
 
 import sys
 
+from ..utils import sysexits
+
 
 def main() -> int:
     """
@@ -19,4 +21,4 @@ def main() -> int:
     line arguments, prepares and executes the ui and ensures clean
     exit behaviour.
     """
-    return 0
+    return sysexits.EX_OK
